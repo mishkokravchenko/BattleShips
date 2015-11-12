@@ -1,4 +1,4 @@
-package org.kmisha.battleships.swing;
+package org.kmisha.battleships.logic;
 
 import javax.swing.UIManager;
 

@@ -1,11 +1,11 @@
-package org.itstep.sea.swing;
+package org.kmisha.battleships.swing;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
-import org.itstep.sea.logic.*;
+import org.kmisha.battleships.logic.*;
 
 abstract public class PanelField extends JPanel implements ISubscriber {
 	
@@ -33,7 +33,7 @@ abstract public class PanelField extends JPanel implements ISubscriber {
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		// рисуем решётку
+		// Г°ГЁГ±ГіГҐГ¬ Г°ГҐГёВёГІГЄГі
 		for(int i = 0; i < getField().getWidth() + 1; i++) {
 			g.drawLine(i * getCellWidth(), 0, i * getCellWidth(), getCellHeight() * getField().getHeight());
 		}
@@ -41,7 +41,7 @@ abstract public class PanelField extends JPanel implements ISubscriber {
 		for(int i = 0; i < getField().getHeight() + 1; i++) {
 			g.drawLine(0, i * getCellHeight(), getCellWidth() * getField().getWidth(), i * getCellHeight());
 		}
-		// рисуем элементы
+		// Г°ГЁГ±ГіГҐГ¬ ГЅГ«ГҐГ¬ГҐГ­ГІГ»
 		for(int j = 0; j < getField().getHeight(); j++) {
 			for(int i = 0; i < getField().getWidth(); i++) {
 				int state = field.getCell(i, j).getState();

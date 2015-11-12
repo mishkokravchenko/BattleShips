@@ -1,4 +1,4 @@
-package org.itstep.sea.logic;
+package org.kmisha.battleships.logic;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -61,7 +61,7 @@ public class Ship {
 		int i, m, n;
 		
 		for(i = 0; i < size; i++) {
-			// ê
+			// Ãª
 			m = y + i * dy;
 			n = x + i * dx;
 			if (! tp.setShip(m, n) ) {

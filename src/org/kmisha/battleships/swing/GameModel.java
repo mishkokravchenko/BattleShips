@@ -1,4 +1,4 @@
-package org.itstep.sea.swing;
+package org.kmisha.battleships.swing;
 
 import java.util.ArrayList;
 import java.util.Iterator;

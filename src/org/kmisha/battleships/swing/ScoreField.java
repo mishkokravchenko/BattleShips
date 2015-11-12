@@ -1,11 +1,11 @@
-package org.itstep.sea.swing;
+package org.kmisha.battleships.swing;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
-import org.itstep.sea.logic.*;
+import org.kmisha.battleships.logic.*;
 
 public class ScoreField extends JPanel implements ISubscriber {
 

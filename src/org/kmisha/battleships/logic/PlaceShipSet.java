@@ -1,4 +1,4 @@
-package org.itstep.sea.logic;
+package org.kmisha.battleships.logic;;
 
 public class PlaceShipSet extends PlaceShip {
 	

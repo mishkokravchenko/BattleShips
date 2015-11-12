@@ -1,4 +1,4 @@
-package org.itstep.sea.ai;
+package org.kmisha.battleships.ai;
 
 abstract public class AIBase {
 

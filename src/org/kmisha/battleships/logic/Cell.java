@@ -1,4 +1,4 @@
-package org.itstep.sea.logic;
+package org.kmisha.battleships.logic;
 
 public class Cell {
 	public final static int CELL_WATER = 1;

@@ -1,4 +1,4 @@
-package org.itstep.sea.swing;
+package org.kmisha.battleships.swing;
 
 public interface ISubscriber {
 	public void update();

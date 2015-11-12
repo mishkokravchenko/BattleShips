@@ -1,8 +1,8 @@
-package org.itstep.sea.ai;
+package org.kmisha.battleships.ai;
 
 import java.util.ArrayList;
 
-import org.itstep.sea.logic.*;
+import org.kmisha.battleships.logic.*;
 
 public class AIPlace extends AIBase {
 

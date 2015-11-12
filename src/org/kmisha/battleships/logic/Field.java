@@ -1,4 +1,4 @@
-package org.itstep.sea.logic;
+package org.kmisha.battleships.logic;
 
 import java.util.ArrayList;
 
@@ -28,15 +28,15 @@ public class Field {
 
 	public void setShip() {
 		setNumLiveShips(0);
-		// заполняем поле элементами воды
+		// Г§Г ГЇГ®Г«Г­ГїГҐГ¬ ГЇГ®Г«ГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ Г¬ГЁ ГўГ®Г¤Г»
 		cells = new Cell[getWidth()][getHeight()]; 
 		for(int j = 0; j < getHeight(); j++) {
 			for(int i = 0; i < getWidth(); i++) {
-				//TODO возможно не правильно каждый раз создавать
+				//TODO ГўГ®Г§Г¬Г®Г¦Г­Г® Г­ГҐ ГЇГ°Г ГўГЁГ«ГјГ­Г® ГЄГ Г¦Г¤Г»Г© Г°Г Г§ Г±Г®Г§Г¤Г ГўГ ГІГј
 				cells[i][j] = new Cell(i, j);
 			}
 		}
-		// заполняем поле короблями
+		// Г§Г ГЇГ®Г«Г­ГїГҐГ¬ ГЇГ®Г«ГҐ ГЄГ®Г°Г®ГЎГ«ГїГ¬ГЁ
 		ships = new ArrayList<Ship>(); 
 		for(int i = getMaxShip(); i > 0; i--) {
 			for(int j = (getMaxShip() - i +1 ); j > 0; j--) {
@@ -44,7 +44,7 @@ public class Field {
 				ships.add(ship);
 			}
 		}
-		// удаляем окружение коробля
+		// ГіГ¤Г Г«ГїГҐГ¬ Г®ГЄГ°ГіГ¦ГҐГ­ГЁГҐ ГЄГ®Г°Г®ГЎГ«Гї
 		for(int j = 0; j < getHeight(); j++) {
 			for(int i = 0; i < getWidth(); i++) {
 				Cell cell = cells[i][j];
